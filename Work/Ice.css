@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Andale Mono', monospace;
+}
+
+header {
+    position: static;
+    top: auto;
+    left: auto;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: pink;
+}
+
+header .logo {
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    position: relative;
+    top: 15px;
+    left: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header ul {
+    position: relative;
+    top: 15px;
+    right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a {
+    text-decoration: underline;
+    padding: 6px 15px;
+    color: black;
+    border-radius: 50px;
+}
+
+
+header ul li a:hover
+{
+    background: black;
+    color: #fff;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+section p {
+    top: 0;
+    left: 0;
+}
+
+main article h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 4em;
+}
+
+main article p {
+    font-size: 2em;
+    padding: 50px;
+    padding-top: 0px; /*Устанавливает значение поля от верхнего края содержимого элемента.*/
+}
+
+
+footer {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: pink;
+    color: black;
+}
+footer a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: black;
+}
+#mor:target {
+    display: block;
+}
+#mor {
+    background: rgba(102, 102, 102, 0.68);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 9999999999;
+}
+window {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    border: 1px solid #cecece;
+    padding: 50px;
+    transform: translate(-50%,-50%);
+    background-color: #fafafa;
+
+}
+@media (max-width: 425px) {
+    window{
+        left: 35%;
+    }
+
+    header ul li {
+        list-style: none;
+        margin-left: 2px;
+    }
+
+    header ul li a{
+        position: relative;
+        top: 10px;
+        left: -135px;
+    }
+    header .logo {
+        font-size: 2em;
+        position: center;
+        top: -10px;
+        left: 110px;
+        letter-spacing: 2px;
+    }
+
+    footer {
+
+        padding: 30px 10px;
+
+    }
+    main article h1 {
+        font-size: 3em;
+    }
+}
