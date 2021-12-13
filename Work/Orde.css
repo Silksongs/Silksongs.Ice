@@ -82,7 +82,7 @@ div#main_text a {
     margin-bottom: 10px;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
     .row {
         flex-direction: column-reverse;
     }

@@ -114,70 +114,38 @@ footer a {
     padding: 6px 15px;
     color: black;
 }
-@media (max-width: 425px) {
-    .karta{
-        width: 100px;
-        height: 100px;
-    }
-    header ul li {
-        list-style: none;
-        margin-left: 2px;
+@media (max-width: 500px) {
+
+
+    .headnav{
+        right: 40px;
     }
     header ul {
-        position: relative;
-        top: 15px;
-        right: 50px;
-
-        display: flex;
-        justify-content: space-around;
-
+        position:absolute;
+        top: 50px;
+        right: 15px;
+        margin: 1px;
+    }
+    header ul li {
+        margin-left: 1px;
     }
     header ul li a{
-        position: relative;
-        top: 10px;
-        left: -135px;
-        display: flex;
-        justify-content: space-between;
+        padding: 1px 10px;
     }
     header .logo {
-        color: black;
-        font-weight: 700;
-        text-decoration: none;
         font-size: 2em;
         position: center;
         top: -10px;
         left: 110px;
-        text-transform: uppercase;
         letter-spacing: 2px;
     }
-    header {
-        position: static;
-        top: auto;
-        left: auto;
-        width: 100%;
-        margin: auto;
-        padding: 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: pink;
-    }
+
     footer {
-        position: static;
-        top: 0;
-        left: 0;
-        width: 100%;
-        margin: auto;
+
         padding: 30px 10px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: pink;
-        color: black;
+
     }
     main article h1 {
-        text-align: center;
-        font-weight: 700;
         font-size: 3em;
     }
 }

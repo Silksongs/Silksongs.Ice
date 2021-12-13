@@ -120,24 +120,26 @@ window {
     width: 400px;
     border: 1px solid #cecece;
     padding: 50px;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     background-color: #fafafa;
 
 }
-@media (max-width: 425px) {
-    window{
-        left: 35%;
-    }
+@media (max-width: 500px) {
 
+    .headnav{
+        right: 40px;
+    }
+    header ul {
+        position:absolute;
+        top: 50px;
+        right: 15px;
+        margin: 1px;
+    }
     header ul li {
-        list-style: none;
-        margin-left: 2px;
+        margin-left: 1px;
     }
-
     header ul li a{
-        position: relative;
-        top: 10px;
-        left: -135px;
+        padding: 1px 10px;
     }
     header .logo {
         font-size: 2em;
